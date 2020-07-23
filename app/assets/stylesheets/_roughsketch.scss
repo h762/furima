@@ -50,13 +50,20 @@
             margin: 10px 0 0 10px;
           }
         }
-        &__pictureArea{
-          background-color: rgb(245, 245, 245);
+        &__iconArea{
           height: 100px;
           width: 80%;
           margin: 10px;
+          padding-top: 20px;
+          background-color: rgb(245, 245, 245);
           display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+          &__pictureArea{
+            display: none;
+          }
         }
+        
       }
 // -----------商品説明欄----------------------------------------------
       &__item{

@@ -10,8 +10,10 @@
         .Base__body__area__picture__text__explain
           最大10枚までアップロードできます
       = form_with url:"#", local: true do |i|
-        = i.label :image do
-          = i.file_field :image, class: ".Base__body__area__picture__pictureArea"
+        = i.label :image, class: "Base__body__area__picture__iconArea" do
+          = icon('fas','camera')
+          = i.file_field :image, class: "Base__body__area__picture__iconArea__pictureArea"
+          <br>ドラッグアンドドロップ<br>またはクリックしてファイルをアップロード
 
     .Base__body__area__item
       .Base__body__area__item__nameArea
