@@ -65,6 +65,7 @@
     
     .Base__body__area__delivery
       配送について
+      = link_to icon("fas", "question-circle"), "#"
       .Base__body__area__delivery__feeArea
         .Base__body__area__delivery__feeArea__step
           .Base__body__area__delivery__feeArea__step__fee
@@ -90,7 +91,7 @@
         = form_with url:"#", local: true do |i|
           = i.select :item, {"1~2日で発送":1, "2~3日で発送":2, "4~7日で発送":3}, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__daysArea__selectArea", required: true}
     
-    = form_with url:"#", class: "Base__body__area__price", local: true do |i|
+    .Base__body__area__price
       価格（¥300〜9,999,999）
       = link_to icon("fas", "question-circle"), "#"
       .Base__body__area__price__sellingPriceArea
@@ -128,6 +129,6 @@
         = link_to "フリマ利用規約","#", class: "Base__body__area__foot__agreementArea__agreement"
         = link_to "特定商取引に関する表記","#", class: "Base__body__area__foot__agreementArea__write"
       .Base__body__area__foot__icon
-        = image_tag "logo-white.png", size: "170x49"
+        = link_to (image_tag "logo-white.png", size: "170x49"), "#"
       .Base__body__area__foot__applicationName
         ©️furima, Inc.

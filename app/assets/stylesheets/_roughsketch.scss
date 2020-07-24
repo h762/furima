@@ -17,7 +17,7 @@
 // ----------ロゴ---------------------------------------
 .Base{
   background-color: rgb(245, 245, 245);
-  height: 380vh;
+  height: 2400px;
   font-size: 14px;
   &__head{
     display: flex;
@@ -75,7 +75,7 @@
       }
 // -----------商品説明欄----------------------------------------------
       &__item{
-        height: 350px;
+        height: 370px;
         @include layout;
         &__nameArea{
           &__step{
@@ -207,7 +207,7 @@
         &__feeArea{
           &__step{
             display: flex;
-            margin-top: 20px;
+            padding-top: 20px;
             &__fee{
               font-weight: bold;
             }
@@ -292,6 +292,8 @@
               text-align: right;
               margin-right: 10px;
               border: 1px solid rgb(206, 206, 206);
+              height: 40px;
+              width: 300px;
             }
           }
         }
@@ -350,7 +352,7 @@
         font-size: 10px;
         background-color: white;
         height: 100px;
-        padding: 0 20px;
+        padding: 0 30px;
       }
 // -----------プライバシーポリシー類-----------------------
       &__foot{
