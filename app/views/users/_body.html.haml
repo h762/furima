@@ -90,8 +90,9 @@
         = form_with url:"#", local: true do |i|
           = i.select :item, {"1~2日で発送":1, "2~3日で発送":2, "4~7日で発送":3}, {include_blank: "選択してください"}, {class: "Base__body__area__delivery__daysArea__selectArea", required: true}
     
-    .Base__body__area__price
+    = form_with url:"#", class: "Base__body__area__price", local: true do |i|
       価格（¥300〜9,999,999）
+      = link_to icon("fas", "question-circle"), "#"
       .Base__body__area__price__sellingPriceArea
         .Base__body__area__price__sellingPriceArea__letterStep
           .Base__body__area__price__sellingPriceArea__letterStep__price
